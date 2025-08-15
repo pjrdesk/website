@@ -1,1 +1,344 @@
+<!-- Hero Section -->
+<section class="gradient-bg section-padding relative overflow-hidden" aria-labelledby="hero-heading">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="text-center">
+            <!-- Beta Badge -->
+            <div class="inline-flex items-center px-4 py-2 rounded-full bg-blue-50 text-blue-700 text-sm font-medium mb-8 fade-in">
+                <span class="w-2 h-2 bg-blue-500 rounded-full mr-2 animate-pulse"></span>
+                Nowa wersja Beta jest dostępna
+                <a href="#" class="ml-2 text-blue-600 hover:text-blue-800 underline font-semibold">sprawdź teraz</a>
+            </div>
 
+            <!-- Main Headline -->
+            <h1 id="hero-heading" class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 slide-up leading-tight">
+                Gdzie Radość i Rozwój,
+                <br>
+                <span class="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
+                    Idą w Parze!
+                </span>
+            </h1>
+
+            <!-- Subtitle -->
+            <p class="text-xl text-gray-600 mb-12 max-w-3xl mx-auto slide-up leading-relaxed">
+                Jesteśmy miejscem pełnym ciepła, troski i indywidualnego podejścia do każdego dziecka. Tworzymy przestrzeń, w której maluchy z wadami wzroku rozwijają swoje umiejętności, odkrywają świat i budują pewność siebie.
+            </p>
+
+            <!-- Hero Image with Irregular Shape and Buttons -->
+            <div class="relative max-w-6xl mx-auto">
+                <div class="hero-card" style="background-image: url('images/logo-ps188-kasztan.png');">
+                    <!-- Action buttons directly on image with white background -->
+                    <div class="action-buttons">
+                        <div class="action-btn">
+                            <div class="btn-icon red-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.89-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.11-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
+                                </svg>
+                            </div>
+                            <div class="btn-text">
+                                <h4>Wydarzenia</h4>
+                                <p>Kalendarz wydarzeń pełen atrakcji</p>
+                            </div>
+                            <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="m9 18 6-6-6-6"/>
+                            </svg>
+                        </div>
+                        
+                        <div class="action-btn">
+                            <div class="btn-icon orange-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <circle cx="12" cy="12" r="8"/>
+                                    <path d="M12 6v12"/>
+                                    <path d="M6 12h12"/>
+                                </svg>
+                            </div>
+                            <div class="btn-text">
+                                <h4>O przedszkolu</h4>
+                                <p>Dowiedz się więcej o naszej placówce</p>
+                            </div>
+                            <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="m9 18 6-6-6-6"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+/* Dodatkowe style dla prostego hero z obrazkiem w tle */
+.hero-card {
+    position: relative;
+    overflow: hidden;
+    color: white;
+    padding: 0;
+    min-height: 550px; /* Zwiększone o 50px z 500px */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    /* Background image wypełniający całą przestrzeń */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #f3f4f6;
+    
+    /* Zaokrąglony kształt BEZ ścięcia po prawej stronie */
+    border-radius: 32px;
+}
+
+/* Action buttons directly on image */
+.action-buttons {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    display: flex;
+    gap: 16px;
+    z-index: 10;
+}
+
+.action-btn {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 24px;
+    background: white; /* Białe tło */
+    color: #1f2937;
+    text-decoration: none;
+    border-radius: 20px; /* Zaokrąglone boki */
+    min-width: 280px;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    border: none;
+}
+
+.action-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+    background: #f9fafb;
+}
+
+.btn-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.red-icon {
+    background: #ef4444;
+    color: white;
+}
+
+.orange-icon {
+    background: #f59e0b;
+    color: white;
+}
+
+.btn-text {
+    flex: 1;
+    text-align: left;
+}
+
+.btn-text h4 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 4px 0;
+    color: #1f2937;
+    line-height: 1.2;
+}
+
+.btn-text p {
+    font-size: 14px;
+    color: #6b7280;
+    margin: 0;
+    line-height: 1.3;
+}
+
+.btn-arrow {
+    color: #9ca3af;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+}
+
+.action-btn:hover .btn-arrow {
+    transform: translateX(6px);
+    color: #6b7280;
+}
+
+.action-buttons {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    display: flex;
+    gap: 16px;
+    z-index: 10;
+}
+
+.action-btn {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 24px;
+    background: rgba(255, 255, 255, 0.98);
+    color: #1f2937;
+    text-decoration: none;
+    border-radius: 20px;
+    min-width: 280px;
+    backdrop-filter: blur(20px);
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    border: none;
+}
+
+.action-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 1);
+}
+
+.btn-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.red-icon {
+    background: #ef4444;
+    color: white;
+}
+
+.orange-icon {
+    background: #f59e0b;
+    color: white;
+}
+
+.btn-text {
+    flex: 1;
+    text-align: left;
+}
+
+.btn-text h4 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 4px 0;
+    color: #1f2937;
+    line-height: 1.2;
+}
+
+.btn-text p {
+    font-size: 14px;
+    color: #6b7280;
+    margin: 0;
+    line-height: 1.3;
+}
+
+.btn-arrow {
+    color: #9ca3af;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+}
+
+.action-btn:hover .btn-arrow {
+    transform: translateX(6px);
+    color: #6b7280;
+}
+
+/* Responsywność */
+@media (max-width: 768px) {
+    .hero-card {
+        min-height: 300px;
+        border-radius: 40px;
+        clip-path: polygon(
+            0% 0%, 
+            100% 0%, 
+            100% 90%, 
+            90% 100%, 
+            0% 100%
+        );
+    }
+    
+    .action-buttons {
+        bottom: 20px;
+        right: 20px;
+        gap: 15px;
+    }
+    
+    .action-btn {
+        width: 170px;
+        height: 140px;
+        padding: 20px 16px 16px 16px;
+        border-radius: 20px;
+    }
+    
+    .btn-icon {
+        width: 56px;
+        height: 56px;
+        border-radius: 16px;
+        margin-bottom: 12px;
+    }
+    
+    .btn-text h4 {
+        font-size: 16px;
+    }
+    
+    .btn-text p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-card {
+        min-height: 250px;
+        border-radius: 30px;
+    }
+    
+    .action-buttons {
+        bottom: 15px;
+        right: 15px;
+        gap: 10px;
+        flex-direction: column;
+    }
+    
+    .action-btn {
+        width: 150px;
+        height: 120px;
+        padding: 16px 12px 12px 12px;
+        border-radius: 16px;
+    }
+    
+    .btn-icon {
+        width: 48px;
+        height: 48px;
+        border-radius: 14px;
+        margin-bottom: 10px;
+    }
+    
+    .btn-text h4 {
+        font-size: 15px;
+        margin-bottom: 6px;
+    }
+    
+    .btn-text p {
+        font-size: 12px;
+        line-height: 1.3;
+    }
+    
+    .btn-arrow {
+        width: 18px;
+        height: 18px;
+        margin-top: 8px;
+    }
+}
+</style>

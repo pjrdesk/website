@@ -1,0 +1,316 @@
+<!-- Workflow Section - Bento Grid Layout -->
+<section class="section-padding bg-white section-with-bg" aria-labelledby="workflow-heading">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 fade-in">
+            <h2 id="workflow-heading" class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                Nasze przedszkolaki
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                W naszym przedszkolu każde dziecko znajdzie swoje miejsce w jednej z przyjaznych i inspirujących grup. Tworzymy przestrzeń, w której maluchy mogą rozwijać swoje umiejętności, odkrywać świat i nawiązywać pierwsze przyjaźnie.
+            </p>
+        </div>
+
+        <!-- Bento Grid Container -->
+        <div class="bento-grid">
+            <!-- Grupa I Pszczółki -->
+            <div class="group-pszczolki">
+                <div class="card slide-up will-change">
+                    <div class="flex flex-col h-full">
+                        <!-- Zdjęcie zamiast ikony -->
+                        <div class="mb-4 overflow-hidden rounded-lg">
+                            <img 
+                                src="\images\banner-1.png" 
+                                alt="Grupa Pszczółki" 
+                                class="w-full h-48 object-cover"
+                            >
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3">Grupa I Pszczółki</h3>
+                            <p class="text-gray-600 mb-4">Jesteśmy ciekawymi świata dziećmi, które każdego dnia uczą się czegoś nowego.</p>
+                        </div>
+                        <button class="btn-secondary w-full">Poznaj grupę Pszczółek</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grupa II Biedronki -->
+            <div class="group-biedronki">
+                <div class="card slide-up will-change">
+                    <div class="flex flex-col h-full">
+                        <!-- Zdjęcie zamiast ikony -->
+                        <div class="mb-4 overflow-hidden rounded-lg">
+                            <img 
+                                src="\images\banner-1.png" 
+                                alt="Grupa Biedronki" 
+                                class="w-full h-48 object-cover"
+                            >
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3">Grupa II Biedronki</h3>
+                            <p class="text-gray-600 mb-4">Każdego dnia przychodzimy do naszego przedszkola z coraz większą radością. Podczas codziennych zajęć uczymy się wierszy, piosenek, tańców, chętnie malujemy i rysujemy.</p>
+                        </div>
+                        <div class="flex gap-2">
+                            <button class="btn-secondary flex-1">View Analytics</button>
+                            <button class="btn-primary flex-1">Czytaj więcej</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grupa III Motylki -->
+            <div class="group-motylki">
+                <div class="card slide-up will-change">
+                    <div class="flex flex-col h-full">
+                        <!-- Zdjęcie zamiast ikony -->
+                        <div class="mb-4 overflow-hidden rounded-lg">
+                            <img 
+                                src="\images\banner-1.png" 
+                                alt="Grupa Motylki" 
+                                class="w-full h-48 object-cover"
+                            >
+                        </div>
+                        <div class="flex-1">
+                            <h4 class="text-lg font-semibold text-gray-900 mb-2">Grupa III Motylki</h4>
+                            <p class="text-gray-600 mb-4">Jesteśmy ciekawymi świata dziećmi, które codziennie uczą się czegoś nowego, bawią się i rozwijają swoje talenty.</p>
+                        </div>
+                        <button class="btn-primary w-full">Czytaj więcej</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Grupa IV Mrówki -->
+            <div class="group-mrowki">
+                <div class="card slide-up will-change">
+                    <div class="flex flex-col h-full">
+                        <!-- Zdjęcie zamiast ikony -->
+                        <div class="mb-4 overflow-hidden rounded-lg">
+                            <img 
+                                src="\images\banner-1.png" 
+                                alt="Grupa Mrówki" 
+                                class="w-full h-48 object-cover"
+                            >
+                        </div>
+                        <div class="flex-1">
+                            <h4 class="text-lg font-semibold text-gray-900 mb-2">Grupa IV Mrówki</h4>
+                            <p class="text-gray-600 mb-4">Jesteśmy najstarszą grupą przedszkolaków, a każdy dzień w przedszkolu to dla nas okazja do nauki, zabawy i odkrywania nowych rzeczy.</p>
+                        </div>
+                        <button class="btn-primary w-full">Czytaj więcej</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+/* Bento Grid Layout */
+.bento-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Grid positioning */
+.group-pszczolki {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.group-biedronki {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.group-motylki {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.group-mrowki {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+/* Card base styles */
+.card {
+    background: white;
+    border-radius: 20px;
+    padding: 28px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid #f1f5f9;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #4f46e5, #a5b4fc);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.card:hover::before {
+    transform: scaleX(1);
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Button styles */
+.btn-primary {
+    background: linear-gradient(135deg, #4f46e5 0%, #a5b4fc 100%);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 12px;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #3730a3 0%, #8b5cf6 100%);
+    transform: translateY(-1px);
+}
+
+.btn-secondary {
+    background: #f8fafc;
+    color: #475569;
+    padding: 12px 20px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.btn-secondary:hover {
+    background: #e2e8f0;
+    transform: translateY(-1px);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .bento-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        gap: 1.5rem;
+    }
+    
+    .group-pszczolki {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    .group-biedronki {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    .group-motylki {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    
+    .group-mrowki {
+        grid-column: 1;
+        grid-row: 4;
+    }
+    
+    .card {
+        padding: 20px;
+    }
+    
+    .card img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: 16px;
+    }
+    
+    .card img {
+        height: 160px;
+    }
+    
+    .btn-primary, .btn-secondary {
+        padding: 10px 16px;
+        font-size: 13px;
+    }
+}
+
+/* Animation utilities */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+.slide-up {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slideUp 0.8s ease-out forwards;
+}
+
+.will-change {
+    will-change: transform, opacity;
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    to { 
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Background image tylko po lewej stronie na dole - bez overlay */
+.section-with-bg {
+   position: relative;
+   background-image: url('/images/bg-baner.png');
+   background-size: 800px auto;
+   background-position: left calc(100% - 150px);
+   background-repeat: no-repeat;
+}
+
+/* USUŃ OVERLAY - zakomentowane żeby sprawdzić czy obrazek się ładuje */
+
+.section-with-bg::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+  
+   z-index: 1;
+}
+
+
+/* Zapewnienie że treść jest nad tłem */
+.section-with-bg > * {
+   position: relative;
+   z-index: 2;
+}
+</style>

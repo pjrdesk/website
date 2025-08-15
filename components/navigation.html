@@ -1,0 +1,309 @@
+<!-- Enhanced Navigation with Dark Mode Toggle + WCAG Compliance -->
+<nav class="bg-surface/95 backdrop-blur-md shadow-sm sticky top-0 z-50" role="navigation" aria-label="Główna nawigacja strony">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+            <!-- Logo -->
+            <div class="flex-shrink-0">
+                <a href="#" class="flex items-center group focus-ring" aria-label="SaasAble - przejdź do strony głównej">
+                    <div class="w-8 h-8 bg-gradient-to-r from-primary to-primary-light rounded-lg flex items-center justify-center text-text-inverse font-bold text-sm group-hover:scale-110 transition-transform" aria-hidden="true">
+                        S
+                    </div>
+                    <span class="ml-3 text-xl font-semibold text-text-primary group-hover:text-primary transition-colors">SaasAble</span>
+                </a>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <div class="hidden md:block" role="menubar">
+                <div class="ml-10 flex items-center space-x-6">
+                    <a href="#hero-section" 
+                       class="nav-link" 
+                       role="menuitem"
+                       aria-describedby="nav-overview-desc">
+                        Przegląd
+                    </a>
+                    <span id="nav-overview-desc" class="sr-only">Przejdź do sekcji z przeglądem głównych funkcji</span>
+                    
+                    <a href="#features-section" 
+                       class="nav-link" 
+                       role="menuitem"
+                       aria-describedby="nav-features-desc">
+                        Funkcje
+                    </a>
+                    <span id="nav-features-desc" class="sr-only">Przejdź do sekcji z opisem funkcjonalności systemu</span>
+                    
+                    <a href="#workflow-section" 
+                       class="nav-link" 
+                       role="menuitem"
+                       aria-describedby="nav-workflow-desc">
+                        Workflow
+                    </a>
+                    <span id="nav-workflow-desc" class="sr-only">Przejdź do sekcji z automatyzacją procesów</span>
+                    
+                    <!-- Resources Dropdown -->
+                    <div class="dropdown" role="menu">
+                        <button class="nav-link dropdown-button focus-ring" 
+                                aria-haspopup="true" 
+                                aria-expanded="false"
+                                id="resources-menu-button"
+                                aria-controls="resources-menu">
+                            Zasoby
+                            <svg class="ml-1 h-4 w-4 transition-transform" 
+                                 fill="none" 
+                                 stroke="currentColor" 
+                                 viewBox="0 0 24 24"
+                                 aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu" 
+                             role="menu" 
+                             id="resources-menu"
+                             aria-labelledby="resources-menu-button">
+                            <div class="py-2" role="none">
+                                <a href="#blog-section" 
+                                   class="dropdown-item focus-ring" 
+                                   role="menuitem"
+                                   aria-describedby="blog-desc">
+                                    <svg class="w-4 h-4 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+                                    </svg>
+                                    Blog
+                                </a>
+                                <span id="blog-desc" class="sr-only">Artykuły i porady dotyczące CRM</span>
+                                
+                                <a href="#" 
+                                   class="dropdown-item focus-ring" 
+                                   role="menuitem"
+                                   aria-describedby="help-desc">
+                                    <svg class="w-4 h-4 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    Centrum Pomocy
+                                </a>
+                                <span id="help-desc" class="sr-only">Dokumentacja i pomoc techniczna</span>
+                                
+                                <a href="#" 
+                                   class="dropdown-item focus-ring" 
+                                   role="menuitem"
+                                   aria-describedby="guides-desc">
+                                    <svg class="w-4 h-4 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                                    </svg>
+                                    Przewodniki
+                                </a>
+                                <span id="guides-desc" class="sr-only">Szczegółowe przewodniki użytkownika</span>
+                                
+                                <a href="#" 
+                                   class="dropdown-item focus-ring" 
+                                   role="menuitem"
+                                   aria-describedby="events-desc">
+                                    <svg class="w-4 h-4 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                    </svg>
+                                    Wydarzenia
+                                </a>
+                                <span id="events-desc" class="sr-only">Webinary i wydarzenia branżowe</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#" 
+                       class="nav-link" 
+                       role="menuitem"
+                       aria-describedby="nav-help-desc">
+                        Pomoc
+                    </a>
+                    <span id="nav-help-desc" class="sr-only">Kontakt i wsparcie techniczne</span>
+                </div>
+            </div>
+
+            <!-- Theme Toggle & CTA Buttons -->
+            <div class="hidden md:flex items-center space-x-4 flex-shrink-0">
+                <!-- Theme Toggle Button -->
+                <button class="theme-toggle focus-ring" 
+                        id="theme-toggle"
+                        aria-label="Przełącz między trybem jasnym i ciemnym"
+                        aria-pressed="false"
+                        title="Przełącz motyw">
+                    <span class="theme-toggle-icon" aria-hidden="true">
+                        <!-- Sun icon (light mode) -->
+                        <svg class="sun-icon w-5 h-5" 
+                             fill="none" 
+                             stroke="currentColor" 
+                             viewBox="0 0 24 24"
+                             aria-hidden="true">
+                            <path stroke-linecap="round" 
+                                  stroke-linejoin="round" 
+                                  stroke-width="2" 
+                                  d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                        </svg>
+                        <!-- Moon icon (dark mode) -->
+                        <svg class="moon-icon w-5 h-5" 
+                             fill="none" 
+                             stroke="currentColor" 
+                             viewBox="0 0 24 24"
+                             aria-hidden="true">
+                            <path stroke-linecap="round" 
+                                  stroke-linejoin="round" 
+                                  stroke-width="2" 
+                                  d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                        </svg>
+                    </span>
+                    <span class="sr-only theme-toggle-text">Tryb jasny aktywny</span>
+                </button>
+
+                <!-- CTA Button -->
+                <button class="btn-primary focus-ring" 
+                        aria-describedby="cta-desc">
+                    Rozpocznij za darmo
+                </button>
+                <span id="cta-desc" class="sr-only">Utwórz darmowe konto SaasAble</span>
+            </div>
+
+            <!-- Mobile menu button -->
+            <div class="md:hidden flex items-center space-x-2">
+                <!-- Mobile Theme Toggle -->
+                <button class="theme-toggle focus-ring" 
+                        id="mobile-theme-toggle"
+                        aria-label="Przełącz motyw"
+                        aria-pressed="false">
+                    <span class="theme-toggle-icon" aria-hidden="true">
+                        <svg class="sun-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                        </svg>
+                        <svg class="moon-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                        </svg>
+                    </span>
+                </button>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" 
+                        class="mobile-menu-button focus-ring" 
+                        aria-expanded="false" 
+                        aria-controls="mobile-menu" 
+                        aria-label="Otwórz menu główne">
+                    <span class="sr-only">Otwórz menu główne</span>
+                    <svg class="hamburger-icon h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" 
+         class="mobile-menu" 
+         role="dialog" 
+         aria-modal="true" 
+         aria-labelledby="Menu nawigacyjne"
+         aria-hidden="true">
+        <div class="mobile-menu-content">
+            <!-- Mobile Menu Header -->
+            <div class="flex items-center justify-between mb-8">
+                <div class="text-xl font-semibold text-text-primary">Menu nawigacyjne</div>
+                <button id="mobile-menu-close" 
+                        class="mobile-menu-close focus-ring" 
+                        aria-label="Zamknij menu">
+                    <span class="sr-only">Zamknij menu</span>
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation Links -->
+            <nav class="space-y-1" role="navigation" aria-label="Menu mobilne">
+                <a href="#hero-section" 
+                   class="mobile-nav-link focus-ring" 
+                   aria-describedby="mobile-nav-overview-desc">
+                    <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h6m2-2V7" />
+                    </svg>
+                    Przegląd
+                </a>
+                <span id="mobile-nav-overview-desc" class="sr-only">Główne funkcje systemu</span>
+                
+                <a href="#features-section" 
+                   class="mobile-nav-link focus-ring"
+                   aria-describedby="mobile-nav-features-desc">
+                    <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14-4H3m16 8H1m18 4H7" />
+                    </svg>
+                    Funkcje
+                </a>
+                <span id="mobile-nav-features-desc" class="sr-only">Szczegółowy opis funkcjonalności</span>
+                
+                <a href="#workflow-section" 
+                   class="mobile-nav-link focus-ring"
+                   aria-describedby="mobile-nav-workflow-desc">
+                    <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                    </svg>
+                    Workflow
+                </a>
+                <span id="mobile-nav-workflow-desc" class="sr-only">Automatyzacja procesów biznesowych</span>
+                
+                <a href="#blog-section" 
+                   class="mobile-nav-link focus-ring"
+                   aria-describedby="mobile-nav-blog-desc">
+                    <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+                    </svg>
+                    Blog
+                </a>
+                <span id="mobile-nav-blog-desc" class="sr-only">Artykuły i porady</span>
+                
+                <a href="#" 
+                   class="mobile-nav-link focus-ring"
+                   aria-describedby="mobile-nav-help-desc">
+                    <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    Pomoc
+                </a>
+                <span id="mobile-nav-help-desc" class="sr-only">Wsparcie i kontakt</span>
+
+                <!-- Mobile Theme Settings -->
+                <div class="pt-4 border-t border-border">
+                    <div class="flex items-center justify-between py-3">
+                        <div class="flex items-center">
+                            <svg class="w-5 h-5 mr-3 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM7 3H5a2 2 0 00-2 2v12a4 4 0 004 4h2a2 2 0 002-2V5a2 2 0 00-2-2z" />
+                            </svg>
+                            <span class="text-text-primary font-medium">Motyw</span>
+                        </div>
+                        <button class="theme-toggle mobile-theme-toggle focus-ring" 
+                                aria-label="Przełącz motyw interfejsu"
+                                aria-pressed="false">
+                            <span class="theme-toggle-icon" aria-hidden="true">
+                                <svg class="sun-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                                </svg>
+                                <svg class="moon-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Mobile CTA Button -->
+                <div class="pt-6">
+                    <button class="btn-primary w-full focus-ring" 
+                            aria-describedby="mobile-cta-desc">
+                        Rozpocznij za darmo
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                        </svg>
+                    </button>
+                    <span id="mobile-cta-desc" class="sr-only">Rozpocznij bezpłatny okres próbny</span>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Accessibility announcements -->
+    <div id="nav-announcements" aria-live="polite" aria-atomic="true" class="sr-only"></div>
+</nav>
