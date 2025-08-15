@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Effortless CRM Management, Seamless Business Growth. Empowering Businesses with a Customizable, Data-Driven CRM Solution.">
+    <meta name="keywords" content="SaaS, CRM, zarządzanie, automatyzacja, biznes, productivity">
+    <meta name="author" content="SaasAble">
+    <meta property="og:title" content="SaasAble - Effortless CRM Management">
+    <meta property="og:description" content="Empowering Businesses with a Customizable, Data-Driven CRM Solution">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://saasable.io">
+    <title>SaasAble - Effortless CRM Management, Seamless Business Growth</title>
+    
+	<script src="js/emergency-fix.js"></script>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body class="bg-white text-gray-900 antialiased">
+    <!-- Skip to content -->
+    <a href="#main-content" class="skip-link">Przejdź do głównej treści</a>
+
+    <!-- Navigation -->
+    <div id="navigation"></div>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <div id="hero-section"></div>
+
+        <!-- Divider -->
+        <div class="section-divider"></div>
+
+        <!-- Features Section -->
+        <div id="features-section"></div>
+
+        <!-- Divider -->
+        <div class="section-divider"></div>
+
+        <!-- Gallery Section -->
+        <div id="gallery-section"></div>
+
+        <!-- Divider -->
+        <div class="section-divider"></div>
+
+        <!-- Workflow Section -->
+        <div id="workflow-section"></div>
+
+        <!-- Divider -->
+        <div class="section-divider"></div>
+
+        <!-- Blog Section -->
+        <div id="blog-section"></div>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <!-- Scripts -->
+	<script src="js/accessibility.js"></script>
+	<script src="js/theme-controller.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/components.js"></script>
+    
+
+    <!-- Fallback for when components don't load -->
+    <noscript>
+        <div style="text-align: center; padding: 50px;">
+            <h1>JavaScript jest wymagany</h1>
+            <p>Ta strona wymaga JavaScript do prawidłowego działania.</p>
+        </div>
+    </noscript>
+
+    <!-- Debug info -->
+    <script>
+        // Debug: sprawdź czy komponenty się ładują
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                const navigation = document.getElementById('navigation');
+                const hero = document.getElementById('hero-section');
+                const gallery = document.getElementById('gallery-section');
+                
+                console.log('=== DEBUG INFO ===');
+                console.log('Navigation loaded:', navigation.innerHTML.length > 0);
+                console.log('Hero loaded:', hero.innerHTML.length > 0);
+                console.log('Gallery loaded:', gallery.innerHTML.length > 0);
+                console.log('Gallery element exists:', !!document.getElementById('gallery-grid'));
+                
+                if (navigation.innerHTML.length === 0) {
+                    console.error('❌ Navigation not loaded - check if components/navigation.html exists');
+                }
+                if (gallery.innerHTML.length === 0) {
+                    console.error('❌ Gallery not loaded - check if components/gallery.html exists');
+                }
+            }, 2000);
+        });
+    </script>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "SaasAble",
+        "description": "Empowering Businesses with a Customizable, Data-Driven CRM Solution",
+        "url": "https://saasable.io",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "description": "Free trial available"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Phoenixcoded",
+            "url": "https://phoenixcoded.net"
+        },
+        "featureList": [
+            "Advanced CRM Management",
+            "Dynamic Task Automation", 
+            "Real-time Workflow Analytics",
+            "Multi-Currency Support",
+            "Enterprise Security Features",
+            "Seamless Integrations"
+        ]
+    }
+    </script>
+</body>
+</html>

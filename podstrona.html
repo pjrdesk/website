@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="pl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rozpoczęcie roku szkolnego 2024/2025 - Przedszkole Specjalne nr 188</title>
+    <meta name="description" content="Z radością witamy wszystkie dzieci i ich rodziny w nowym roku szkolnym w naszym przedszkolu specjalnym nr 188 Pod Kasztanem.">
+    <meta name="keywords" content="przedszkole specjalne, wady wzroku, edukacja, Warszawa, dzieci, terapia">
+    <meta name="author" content="Przedszkole Specjalne nr 188">
+    <meta property="og:title" content="Rozpoczęcie roku szkolnego 2024/2025">
+    <meta property="og:description" content="Z radością witamy wszystkie dzieci i ich rodziny w nowym roku szkolnym">
+    <meta property="og:type" content="article">
+    
+    <script src="js/emergency-fix.js"></script>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <!-- Dodatkowe style dla strony bloga -->
+    <style>
+        /* Hero Banner podobny do głównej strony */
+        .blog-hero {
+            background: linear-gradient(135deg, var(--background-light) 0%, var(--accent-green) 100%);
+            padding: 60px 0 40px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .blog-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(ellipse at top, rgba(79, 70, 229, 0.03) 0%, transparent 50%);
+            z-index: 0;
+        }
+
+        .blog-hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Breadcrumbs - kompletnie bez białego tła */
+        .breadcrumbs {
+            margin-bottom: 24px;
+            background: none !important;
+        }
+
+        .breadcrumb-list {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin: 0;
+            padding: 0;
+            font-size: 14px;
+            background: none !important;
+        }
+
+        .breadcrumb-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: none !important;
+        }
+
+        .breadcrumb-link {
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: color 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            background: none !important;
+            padding: 0 !important;
+        }
+
+        .breadcrumb-link:hover {
+            color: var(--primary);
+        }
+
+        .breadcrumb-separator {
+            color: var(--text-secondary);
+            font-size: 12px;
+        }
+
+        .breadcrumb-current {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        /* Blog title - zwężony jak inne elementy */
+        .blog-title {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 700;
+            color: var(--text-primary);
+            margin: 0 0 16px 0;
+            line-height: 1.2;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .blog-subtitle {
+            font-size: 18px;
+            color: var(--text-secondary);
+            margin: 0;
+            line-height: 1.6;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Hero image container - również zwężony */
+        .blog-hero-image {
+            max-width: 800px;
+            margin: 40px auto 0;
+            position: relative;
+        }
+
+        .blog-image-card {
+            position: relative;
+            overflow: hidden;
+            min-height: 400px;
+            width: 100%;
+            border-radius: 32px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .blog-image-card img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 32px;
+        }
+
+        /* Główna zawartość bloga - dopasowana szerokość */
+        .blog-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .blog-article {
+            background: transparent;
+            border-radius: 0;
+            padding: 0;
+            box-shadow: none;
+            border: none;
+        }
+
+        /* Meta informacje */
+        .blog-meta {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 32px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border-light);
+            flex-wrap: wrap;
+        }
+
+        .meta-badge {
+            background: var(--accent-blue);
+            color: var(--primary);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .meta-date {
+            color: var(--text-tertiary);
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .meta-author {
+            color: var(--text-secondary);
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .meta-read-time {
+            color: var(--text-tertiary);
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        /* Treść artykułu */
+        .blog-text {
+            font-size: 17px;
+            line-height: 1.8;
+            color: var(--text-secondary);
+        }
+
+        .blog-text h2 {
+            color: var(--text-primary);
+            margin: 40px 0 20px 0;
+            font-size: 28px;
+            font-weight: 600;
+        }
+
+        .blog-text h3 {
+            color: var(--text-primary);
+            margin: 32px 0 16px 0;
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        .blog-text h4 {
+            color: var(--text-primary);
+            margin: 24px 0 12px 0;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .blog-text p {
+            margin-bottom: 20px;
+        }
+
+        .blog-text ul, .blog-text ol {
+            margin: 20px 0;
+            padding-left: 28px;
+        }
+
+        .blog-text li {
+            margin-bottom: 8px;
+        }
+
+        .blog-text blockquote {
+            margin: 32px 0;
+            padding: 24px;
+            background: var(--accent-green);
+            border-left: 4px solid var(--primary);
+            border-radius: 8px;
+            font-style: italic;
+            color: var(--text-primary);
+        }
+
+        .blog-text img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin: 24px 0;
+        }
+
+        /* Przyciski akcji */
+        .blog-actions {
+            display: flex;
+            gap: 16px;
+            margin-top: 40px;
+            padding-top: 32px;
+            border-top: 1px solid var(--border-light);
+            flex-wrap: wrap;
+        }
+
+        .btn-back {
+            background: transparent;
+            color: var(--primary);
+            padding: 12px 24px;
+            border-radius: 12px;
+            font-weight: 500;
+            font-size: 15px;
+            border: 1.5px solid var(--primary);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-back:hover {
+            background: var(--primary);
+            color: var(--text-inverse);
+            transform: translateY(-2px);
+        }
+
+        .btn-share {
+            background: var(--accent-green);
+            color: var(--success);
+            padding: 12px 24px;
+            border-radius: 12px;
+            font-weight: 500;
+            font-size: 15px;
+            border: 1.5px solid var(--success);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-share:hover {
+            background: var(--success);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* Responsywność */
+        @media (max-width: 768px) {
+            .blog-hero {
+                padding: 40px 0 30px 0;
+            }
+
+            .blog-content {
+                padding: 40px 16px;
+            }
+
+            .blog-article {
+                padding: 24px 0;
+                border-radius: 0;
+            }
+
+            .blog-image-card {
+                min-height: 280px;
+                border-radius: 24px;
+            }
+
+            .blog-image-card::before {
+                border-radius: 24px;
+            }
+
+            .blog-image-placeholder {
+                font-size: 16px;
+                padding: 16px 24px;
+            }
+
+            .blog-meta {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 12px;
+            }
+
+            .blog-text {
+                font-size: 16px;
+            }
+
+            .blog-text h2 {
+                font-size: 24px;
+                margin: 32px 0 16px 0;
+            }
+
+            .blog-text h3 {
+                font-size: 20px;
+                margin: 24px 0 12px 0;
+            }
+
+            .blog-actions {
+                flex-direction: column;
+            }
+
+            .btn-back, .btn-share {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .blog-image-card {
+                min-height: 200px;
+                border-radius: 20px;
+            }
+
+            .blog-image-card::before {
+                border-radius: 20px;
+            }
+
+            .blog-hero-image {
+                margin-top: 24px;
+            }
+        }
+
+        /* Animacje */
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+
+        .slide-up {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: slideUp 0.8s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            to { 
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+    </style>
+</head>
+<body class="bg-white text-gray-900 antialiased">
+    <!-- Skip to content -->
+    <a href="#main-content" class="skip-link">Przejdź do głównej treści</a>
+
+    <!-- Navigation -->
+    <div id="navigation"></div>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Blog Hero Banner -->
+        <section class="blog-hero fade-in">
+            <div class="blog-hero-content">
+                <!-- Breadcrumbs -->
+                <nav class="breadcrumbs" aria-label="Nawigacja ścieżki">
+                    <ol class="breadcrumb-list">
+                        <li class="breadcrumb-item">
+                            <a href="#" class="breadcrumb-link">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                                    <polyline points="9,22 9,12 15,12 15,22"/>
+                                </svg>
+                            </a>
+                            <span class="breadcrumb-separator">›</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#" class="breadcrumb-link">Blog</a>
+                            <span class="breadcrumb-separator">›</span>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <span class="breadcrumb-current">Rozpoczęcie roku szkolnego</span>
+                        </li>
+                    </ol>
+                </nav>
+
+                <!-- Tytuł bloga -->
+                <h1 class="blog-title slide-up">Rozpoczęcie roku szkolnego 2024/2025</h1>
+                <p class="blog-subtitle slide-up delay-100">
+                    Z radością witamy wszystkie dzieci i ich rodziny w nowym roku szkolnym w naszym przedszkolu specjalnym.
+                </p>
+
+                <!-- Hero image container -->
+                <div class="blog-hero-image slide-up delay-200">
+                    <div class="blog-image-card">
+                        <img src="images/przedszkole-sala.jpg" alt="Zdjęcie z uroczystego rozpoczęcia roku szkolnego 2024/2025">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Główna zawartość -->
+        <section class="blog-content">
+            <article class="blog-article slide-up delay-300">
+                <!-- Meta informacje -->
+                <div class="blog-meta">
+                    <span class="meta-badge">Aktualności</span>
+                    <div class="meta-date">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                            <line x1="16" y1="2" x2="16" y2="6"/>
+                            <line x1="8" y1="2" x2="8" y2="6"/>
+                            <line x1="3" y1="10" x2="21" y2="10"/>
+                        </svg>
+                        15 sierpnia 2024
+                    </div>
+                    <div class="meta-author">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                            <circle cx="12" cy="7" r="4"/>
+                        </svg>
+                        Dyrekcja Przedszkola
+                    </div>
+                    <div class="meta-read-time">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12,6 12,12 16,14"/>
+                        </svg>
+                        3 min czytania
+                    </div>
+                </div>
+
+                <!-- Treść artykułu -->
+                <div class="blog-text">
+                    <p><strong>Rozpoczynamy nowy rok szkolny 2024/2025!</strong> Z wielką radością i entuzjazmem witamy wszystkie dzieci oraz ich rodziny w naszym przedszkolu specjalnym nr 188 "Pod Kasztanem".</p>
+
+                    <h2>Nowe możliwości rozwoju</h2>
+                    <p>W tym roku szkolnym przygotowaliśmy wiele nowości i usprawnień, które pomogą naszym wychowankom w jeszcze lepszym rozwoju. Nasz zespół pedagogów specjalnych wdrożył innowacyjne metody pracy z dziećmi z wadami wzroku.</p>
+
+                    <h3>Najważniejsze zmiany w tym roku:</h3>
+                    <ul>
+                        <li>Nowe sale wyposażone w najnowocześniejszy sprzęt do nauki pisma Braille'a</li>
+                        <li>Rozszerzona oferta zajęć terapeutycznych</li>
+                        <li>Dodatkowe warsztaty dla rodziców</li>
+                        <li>Współpraca z nowymi specjalistami</li>
+                    </ul>
+
+                    <blockquote>
+                        "Każde dziecko zasługuje na najlepszy start w życie. Nasza misja to wspieranie rozwoju dzieci z dysfunkcjami wzroku poprzez indywidualne podejście i profesjonalną opiekę."
+                    </blockquote>
+
+                    <h2>Program na nowy rok</h2>
+                    <p>Przygotowaliśmy bogaty program zajęć, który obejmuje:</p>
+
+                    <h3>Zajęcia edukacyjne</h3>
+                    <p>Nasze zajęcia są dostosowane do indywidualnych potrzeb każdego dziecka. Kładziemy szczególny nacisk na:</p>
+                    <ul>
+                        <li>Orientację przestrzenną i mobilność</li>
+                        <li>Naukę pisma punktowego Braille'a</li>
+                        <li>Rozwój umiejętności społecznych</li>
+                        <li>Przygotowanie do nauki w szkole</li>
+                    </ul>
+
+                    <h3>Zajęcia terapeutyczne</h3>
+                    <p>W ramach terapii oferujemy:</p>
+                    <ol>
+                        <li>Terapię integracji sensorycznej</li>
+                        <li>Zajęcia logopedyczne</li>
+                        <li>Muzykoterapię</li>
+                        <li>Rehabilitację wzroku</li>
+                    </ol>
+
+                    <h2>Zaproszenie dla rodziców</h2>
+                    <p>Zapraszamy wszystkich rodziców do aktywnego uczestnictwa w życiu przedszkola. Regularnie organizujemy spotkania, warsztaty i wydarzenia, które pozwalają na wymianę doświadczeń i wspólne wspieranie rozwoju naszych dzieci.</p>
+
+                    <p>Wierzymy, że wspólnie możemy stworzyć najlepsze warunki dla rozwoju każdego dziecka. Cieszmy się razem tym nowym rokiem szkolnym!</p>
+                </div>
+
+                <!-- Przyciski akcji -->
+                <div class="blog-actions">
+                    <a href="#" class="btn-back">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="m12 19-7-7 7-7"/>
+                            <path d="M19 12H5"/>
+                        </svg>
+                        Powrót do bloga
+                    </a>
+                    <a href="#" class="btn-share">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/>
+                            <polyline points="16,6 12,2 8,6"/>
+                            <line x1="12" y1="2" x2="12" y2="15"/>
+                        </svg>
+                        Udostępnij artykuł
+                    </a>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <!-- Scripts - identyczne jak w index.html -->
+    <script>
+        // Prostsze ładowanie komponentów bez fetch dla navigation i footer
+        async function loadComponent(id, file) {
+            try {
+                const response = await fetch(`components/${file}`);
+                if (response.ok) {
+                    const html = await response.text();
+                    const element = document.getElementById(id);
+                    if (element) {
+                        element.innerHTML = html;
+                        console.log(`✅ Loaded: ${file}`);
+                    }
+                } else {
+                    console.warn(`⚠️ Could not load ${file}`);
+                }
+            } catch (error) {
+                console.warn(`⚠️ Error loading ${file}:`, error);
+                // Fallback dla footer jeśli nie można załadować
+                if (id === 'footer') {
+                    document.getElementById('footer').innerHTML = `
+                        <footer style="background: #1f2937; color: white; padding: 40px 20px; text-align: center;">
+                            <p>&copy; 2025 Przedszkole Specjalne Nr 188 w Warszawie</p>
+                        </footer>
+                    `;
+                }
+            }
+        }
+
+        // Załaduj komponenty po DOMContentLoaded
+        document.addEventListener('DOMContentLoaded', async () => {
+            await loadComponent('navigation', 'navigation.html');
+            await loadComponent('footer', 'footer.html');
+        });
+    </script>
+    <script src="js/accessibility.js"></script>
+    <script src="js/theme-controller.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/components.js"></script>
+
+    <!-- Fallback for when components don't load -->
+    <noscript>
+        <div style="text-align: center; padding: 50px;">
+            <h1>JavaScript jest wymagany</h1>
+            <p>Ta strona wymaga JavaScript do prawidłowego działania.</p>
+        </div>
+    </noscript>
+
+    <!-- Debug info + Footer fallback -->
+    <script>
+        // Debug: sprawdź czy komponenty się ładują
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                const navigation = document.getElementById('navigation');
+                const footer = document.getElementById('footer');
+                
+                console.log('=== BLOG PAGE DEBUG INFO ===');
+                console.log('Navigation loaded:', navigation.innerHTML.length > 0);
+                console.log('Footer loaded:', footer.innerHTML.length > 0);
+                
+                if (navigation.innerHTML.length === 0) {
+                    console.error('⚠ Navigation not loaded - check if components/navigation.html exists');
+                }
+                if (footer.innerHTML.length === 0) {
+                    console.error('⚠ Footer not loaded - adding fallback footer');
+                    // Dodaj fallback footer
+                    footer.innerHTML = `
+                        <footer style="background: linear-gradient(135deg, #1f2937 0%, #374151 100%); color: white; padding: 60px 20px 40px; margin-top: 60px;">
+                            <div style="max-width: 1200px; margin: 0 auto; text-align: center;">
+                                <div style="margin-bottom: 32px;">
+                                    <h3 style="color: white; font-size: 24px; font-weight: 700; margin-bottom: 16px;">Przedszkole Specjalne nr 188 "Pod Kasztanem"</h3>
+                                    <p style="color: #d1d5db; font-size: 16px;">Ponad 70 lat doświadczenia w edukacji specjalnej</p>
+                                </div>
+                                <div style="border-top: 1px solid #4b5563; padding-top: 24px; color: #9ca3af; font-size: 14px;">
+                                    © 2025 Przedszkole Specjalne Nr 188 w Warszawie
+                                </div>
+                            </div>
+                        </footer>
+                    `;
+                }
+            }, 2000);
+        });
+    </script>
+
+    <!-- Schema.org structured data for blog post -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Rozpoczęcie roku szkolnego 2024/2025",
+        "description": "Z radością witamy wszystkie dzieci i ich rodziny w nowym roku szkolnym w naszym przedszkolu specjalnym nr 188 Pod Kasztanem.",
+        "author": {
+            "@type": "Organization",
+            "name": "Przedszkole Specjalne nr 188"
+        },
+        "datePublished": "2024-08-15",
+        "dateModified": "2024-08-15",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Przedszkole Specjalne nr 188 Pod Kasztanem",
+            "url": "https://przedszkole188.pl"
+        },
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://przedszkole188.pl/blog/rozpoczecie-roku-szkolnego-2024-2025"
+        },
+        "articleSection": "Aktualności",
+        "keywords": "przedszkole specjalne, rok szkolny, edukacja, dzieci, wady wzroku"
+    }
+    </script>
+</body>
+</html>
